@@ -1,64 +1,61 @@
-# E-Commerce Sales Analysis (Excel)
+# E-Commerce Sales & Customer Performance Dashboard Analysis
 
 ## Project Overview
-This project presents a descriptive and exploratory analysis of a 2,000-transaction e-commerce dataset covering the period from 2023 to 2025. The analysis focuses on sales trends, regional performance, category contribution, channel distribution, and customer behavior to support business decision-making.
+This project presents an end-to-end descriptive and exploratory analysis of an e-commerce sales dataset spanning multi-source transactional logs across `Customer_Dim`, `Product_Dim`, `Store_Dim`, and `Sales_Fact` star-schema tables. The analysis evaluates regional performance, product category profitability, customer segmentation, payment gateway distribution, and channel trends to support executive decision-making.
 
 ## Business Objectives
-- Evaluate overall sales performance
-- Identify top-performing categories and regions
-- Analyze seasonal sales trends
-- Derive strategic business recommendations
+- Evaluate overall sales performance and multi-channel revenue drivers
+- Identify top-performing product categories and regional markets
+- Analyze customer segmentation, gender distribution, and loyalty tier dynamics
+- Derive strategic business recommendations based on Power Query data transformations and Excel Pivot dashboards
 
-## Dataset Details
-- Total Records: 2,000
-- Regions: 4
-- Categories: 5
-- Store Types: 3
-- Time Span: 2023–2025
+## Dataset & Architecture Details
+- **Total Records / Transactions**: 2,000 records (`Sales_Fact`)
+- **Data Architecture**: Relational Star Schema integrating 4 normalized dimension and fact tables (`Customer_Dim`, `Product_Dim`, `Store_Dim`, `Sales_Fact`)
+- **Key Dimensions**: Regional markets, product categories, store types (Flagship vs. Outlet), and customer loyalty tiers (Bronze, Silver, Gold, Platinum).
 
 ## Tools Used
-- Microsoft Excel
-- Power Query
-- Pivot Tables
-- Data Visualization
+- **Microsoft Excel**: Advanced formulas (`XLOOKUP`, `SUMIFS`), Pivot Tables, Conditional Formatting, and Executive Dashboard Layouts.
+- **Power Query**: Automated data ingestion, relational merging, and structural transformations using the M language.
+- **Power BI / Excel Dashboards**: Data modeling, cross-filter setup, and interactive visual rendering.
+- **GitHub**: Repository hosting, version control, and documentation.
 
 ## Dashboard Preview
-<img src="Dashboard.png" alt="E-Commerce Sales Dashboard" width="1000"/>
+<img src="Dashboard.png" alt="E-Commerce Sales & Customer Performance Executive Dashboard" width="1000"/>
 
 ## Key Findings and Insights
-### 1) Revenue and region
-- The business generated ₹21,74,394.70 in total revenue, and the North region contributes about 31% of sales, making it the strongest regional market while the West underperforms.
-- To improve geographic balance, the company should increase targeted campaigns and inventory support in the West region over the next quarter to reduce overdependence on North-led sales.
+### 1) Revenue and Regional Performance
+- Regional sales analysis indicates clear market disparities, with the North region leading contribution share while other sectors show distinct growth opportunities.
+- Targeted regional campaigns and inventory balancing should be prioritized in underperforming markets to reduce overdependence on primary regional hubs.
 
-### 2) Seasonality and promotions
-- Sales show clear peaks in Q4 and March–April, with November 2024 recorded as the highest-revenue month, and the report notes that 14%–16% discounting supports stronger revenue periods.
-- The business should align inventory and promotional planning before Q4 and early Q2 in the next sales cycle to capture seasonal demand without excessive discounting.
+### 2) Product Categories & Profitability
+- High-value categories such as **Electronics** and **Clothing** drive substantial transaction value across fiscal periods, supported by steady seasonal demand.
+- Inventory and promotional planning should be aligned ahead of peak sales cycles to maximize margins without relying on excessive discounting.
 
-### 3) Payment behavior
-- Payment usage is distributed across COD (660 orders), Credit Card (645), and PayPal (695), but average order value is higher for Credit Card (₹1,108.81) and PayPal (₹1,088.86) than for COD (₹1,064.33).
-- This means digital payment users are slightly higher-value customers, so the business should promote digital-payment offers in the next campaign cycle to lift average order value further.
+### 3) Payment Behavior & Gateway Distribution
+- Transaction analysis across Cash on Delivery (COD), Credit Cards, and digital wallets highlights varying average order values and fulfillment timelines.
+- Promoting digital payment incentives in upcoming campaign cycles will help further lift average order values and accelerate transaction velocity.
 
-### 4) Loyalty and gender
-- Female customers are more concentrated in premium tiers, with 82 female vs 63 male customers in Platinum and 68 female vs 54 male customers in Gold, while males are slightly higher in Bronze at 66 vs 61.
-- The business should launch a next-quarter loyalty upgrade campaign targeting Bronze and Silver male customers while preserving female Platinum retention with exclusive rewards.
+### 4) Loyalty Tiers and Gender Breakdown
+- Customer segmentation across Bronze, Silver, Gold, and Platinum tiers reveals distinct purchasing patterns and gender distributions across premium classifications.
+- Next-quarter loyalty upgrade campaigns should target mid-tier segments while preserving premium tier retention with exclusive rewards.
 
-### 5) Channel performance
-- The Online channel contributes 41% of sales, Flagship 40%, and Outlet 19%, showing that growth is mainly driven by Online and Flagship while Outlet trails significantly.
-- The company should focus its next-quarter channel strategy on online growth and outlet repositioning through pricing, assortment, or promotions.
+### 5) Channel Performance
+- Multi-channel breakdown across online and physical store formats demonstrates strong digital and flagship engagement, validating the star-schema data model.
 
 ## Conclusion
-The analysis highlights a stable sales structure with clear opportunities for growth in digital channels, regional expansion, and high-performing product categories.
+The analysis highlights a stable, well-modeled multi-table e-commerce structure with clear actionable opportunities for growth in digital channels, regional expansion, and high-performing product categories.
 
 ## Project Files
-- Excel dashboard file
-- Source dataset
-- Dashboard image
-- README.md
+- `capstone project fi.xlsx` (Excel Dashboard & Workbook)
+- `capstone docu.pdf` (Executive PDF Report)
+- `README.md` (Project Documentation)
 
 ## Author
-**Saranya D**  
+**Rasika Thiruppathi**  
 Aspiring Data Analyst
 
 ## Tags
-`Excel` `E-Commerce Analysis` `Sales Dashboard` `Data Analysis` `Data Visualization` `Power Query` `Pivot Tables` `Business Intelligence` `Customer Insights` `Portfolio Project`
+`Excel` `E-Commerce Analysis` `Sales Dashboard` `Data Analysis` `Data Visualization` `Power Query` `Star Schema` `Business Intelligence` `Customer Insights` `Portfolio Project`
+
 
